@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>service-client1</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot　｜　服务提供者　｜　eureka client</description>
 
 	<parent>
 		<groupId>com.springclound</groupId>
@@ -19,20 +19,18 @@
 
 
 	<dependencies>
+		<!-- spting mvc 支持 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- spring-clound支持-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 
-
 	</dependencies>
-
-
-
 
 
 </project>
