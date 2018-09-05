@@ -1,20 +1,50 @@
+*.class
+
+#package files
+
+*.war
+*.ear
+*.jar
+*.zip
+*.tar.gz
+*.rar
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+#kdiff3 ignore
+target/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
+#eclipse ignore ### STS ###
+.sts4-cache
+.springBeans
+.apt_generated
+.factorypath
+.settings/
+.project
+.classpath
+
+#idea
+.idea/
+/idea/
 *.ipr
+*.iml
+*.iws
+
+# temp file
+
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+#system ignore
+.DS_Store
+Thumbs.db
+classes
 
 ### NetBeans ###
 /nbproject/private/
