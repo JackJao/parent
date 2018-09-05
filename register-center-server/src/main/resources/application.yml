@@ -1,6 +1,7 @@
+#eureka是一个高可用的组件，它没有后端缓存，每一个实例注册之后需要向注册中心发送心跳（因此可以在内存中完成），在默认情况下erureka server也是一个eureka client ,必须要指定一个 server。eureka server的配置文件appication.yml：
 server:
     port: 8761
-
+#通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
 eureka:
     instance:
         hostname: localhost
@@ -11,4 +12,5 @@ eureka:
            defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 spring:
   application:
-    name: register-center-server
+    name: server-register-center
+#eureka server 是有界面的，启动工程,打开浏览器访问：http://localhost:8761 查看Instances currently registered with Eureka栏目的application中是否存在已注册的服务
